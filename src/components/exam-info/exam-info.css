@@ -1,0 +1,46 @@
+.exam-info {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exam-info h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.exam-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.exam-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.exam-details h3 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+.exam-details ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.exam-details li {
+    margin-bottom: 10px;
+}
+
+.exam-image {
+    flex: 1;
+    min-width: 300px;
+    background-image: url('/api/placeholder/500/300');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+} 
