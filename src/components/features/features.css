@@ -23,20 +23,68 @@
     padding: 30px;
     width: 350px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .feature-card h3 {
     font-size: 24px;
     margin: 20px 0;
     color: #0b3d91;
+    transition: color 0.3s ease;
 }
 
 .icon {
     font-size: 50px;
     color: #0b3d91;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .icon {
+    transform: scale(1.2);
+}
+
+.feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(11, 61, 145, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card.hovered .feature-overlay {
+    opacity: 1;
+}
+
+.learn-more {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+    background: white;
+    color: #0b3d91;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+    }
 } 
